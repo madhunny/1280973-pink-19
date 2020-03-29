@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Daria Rose](https://up.htmlacademy.ru/adaptive/19/user/1280973).
-* Наставник: `Неизвестно`.
+* Наставник:[Алена Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
