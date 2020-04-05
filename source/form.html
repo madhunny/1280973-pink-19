@@ -45,17 +45,17 @@
         <ul class="fieldset__name__list">
           <li class="fieldset__name__item">
             <label for="surname">Фамилия:</label>
-            <input class="fieldset__name-surname" id="surname" type="text" name="check" placeholder="Укажите фамилию *"
-              required>
+            <input class="fieldset__name-surname" type="text" id="surname" name="surname"
+              placeholder="Укажите фамилию *" required>
           </li>
           <li class="fieldset__name__item">
             <label for="name">Имя:</label>
-            <input class="fieldset__name-name" id="name" type="text" name="check" placeholder="Введите ваше имя *"
+            <input class="fieldset__name-name" type="text" id="name" name="name" placeholder="Введите ваше имя *"
               required>
           </li>
           <li class="fieldset__name__item">
             <label for="secondname">Отчество:</label>
-            <input class="fieldset__name-secondname" id="secondname" type="text" name="check"
+            <input class="fieldset__name-secondname" type="text" id="secondname" name="secondname"
               placeholder="Ну и отчество тоже" required>
           </li>
         </ul>
@@ -64,28 +64,28 @@
         <legend class="fieldset__progress-legend">Ваши безбашенные достижения в путешествии</legend>
         <ul class="progress__list">
           <li class="progress__item">
-            <input class="check__input" type="checkbox" name="shark" checked>
-            <label class="check" for="shark">Сделал селфи с акулой</label>
+            <input class="progress__input" type="checkbox" id="shark" name="shark" value="Акула" checked>
+            <label for="shark">Сделал селфи с акулой</label>
           </li>
           <li class="progress__item">
-            <input class="check__input" type="checkbox" name="sun" checked>
-            <label class="check" for="sun">Обгорел нв солнце </label>
+            <input class="progress__input" type="checkbox" id="sun" name="sun" value="Солнце" checked>
+            <label for="sun">Обгорел нв солнце </label>
           </li>
           <li class="progress__item">
-            <input class="check__input" type="checkbox" name="norris">
-            <label class="check" for="norris">Видел Чака Норриса</label>
+            <input class="progress__input" type="checkbox" id="norris" name="norris" value="Чак Норрис">
+            <label for="norris">Видел Чака Норриса</label>
           </li>
           <li class="progress__item">
-            <input class="check__input" type="checkbox" name="souvenir">
-            <label class="check" for="souvenir">Накупил сувениров</label>
+            <input class="progress__input" type="checkbox" id="souvenir" name="souvenir" value="Сувениры">
+            <label for="souvenir">Накупил сувениров</label>
           </li>
           <li class="progress__item">
-            <input class="check__input" type="checkbox" name="tower" checked>
-            <label class="check" for="tower">Удержал башню </label>
+            <input class="progress__input" type="checkbox" id="tower" name="tower" value="Башня" checked>
+            <label for="tower">Удержал башню</label>
           </li>
           <li class="progress__item">
-            <input class="check__input" type="checkbox" name="hotel">
-            <label class="check" for="hotel">Разгромил отель</label>
+            <input class="progress__input" type="checkbox" id="hotel" name="hotel" value="Отель">
+            <label for="hotel">Разгромил отель</label>
           </li>
         </ul>
       </fieldset>
@@ -93,11 +93,11 @@
         <ul class="fieldset__contacts__list">
           <li class="fieldset__contacts__item">
             <label for="phone">Номер телефона</label>
-            <input class="fieldset__contacts-phone" id="phone" type="text" name="check" value="Номер, пожалуйста">
+            <input class="fieldset__contacts-phone" type="text" id="phone" name="phone" value="Номер, пожалуйста">
           </li>
           <li class="fieldset__contacts__item">
             <label for="mail">Aдрес почты</label>
-            <input class="fieldset__contacts-mail" id="mail" type="text" name="check" value="Введите почту *">
+            <input class="fieldset__contacts-mail" type="text" id="mail" name="mail" value="Введите почту *">
           </li>
         </ul>
       </fieldset>
@@ -106,16 +106,16 @@
         </legend>
         <ul class="app__list">
           <li class="app__item">
-            <input class="app__item-input" type="radio" name="application" value="iOS" checked>
-            <label>Pink для iOS</label>
+            <input class="app__item-input" type="radio" id="ios" name="application" value="iOS" checked>
+            <label for="ios">Pink для iOS</label>
           </li>
           <li class="app__item">
-            <input class="app__item-input" type="radio" name="application" value="Android">
-            <label>Pink на Android</label>
+            <input class="app__item-input" type="radio" id="android" name="application" value="Android">
+            <label for="android">Pink на Android</label>
           </li>
           <li class="app__item">
-            <input class="app__item-input" type="radio" name="application" value="Windows">
-            <label>Windows Phone </label>
+            <input class="app__item-input" type="radio" id="windows" name="application" value="Windows">
+            <label for="windows">Windows Phone </label>
           </li>
         </ul>
       </fieldset>
