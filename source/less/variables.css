@@ -1,4 +1,17 @@
-.visually-hidden {
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -10,26 +23,18 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .header {
   display: flex;
   flex-direction: column;
 }
-
 .nav {
   display: flex;
   flex-direction: row;
-  width: @min-width;
+  width: 320px;
   margin: 0 auto;
 }
-
-
 .nav__list {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-  
 }
-
-
