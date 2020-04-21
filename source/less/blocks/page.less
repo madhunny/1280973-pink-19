@@ -1,8 +1,34 @@
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body {
+  width: @min-width;
+  margin: 0;
+  padding: 0;
+  font-family: @ff-main;
+  font-size: @fs-small;
+  line-height: @lh-small;
+  font-style: @fs-main;
+  background-color: @bg-white;
+  text-transform: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
 .page {
   font-family: @ff-main;
+  background-color: @bg-white;
   font-weight: @fw-normal;
   text-transform: none;
-  background-color: @bg-white;
+  color: @txt-dark;
   background-position: top center;
   background-repeat: no-repeat;
   min-width: @min-width;

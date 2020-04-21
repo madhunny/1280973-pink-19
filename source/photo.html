@@ -10,23 +10,25 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <a class="nav__logo" href="./index.html">
-        <img class="nav__logo-image" src="./img/logotype-white-mobile-svg.svg" width="75" height="22"
-          alt="Логотип Pink">
-      </a>
-      <button class="nav__button" type="button">Открыть меню</button>
-      <ul class="nav__list menu-list">
-        <li class="menu-list__item">
-          <a href="./index.html">Главная</a>
+      <div class="nav__menu">
+        <a class="nav__logo" href="./index.html">
+          <img class="nav__logo-image" src="./img/logotype-white-mobile-svg.svg" width="75" height="22"
+            alt="Логотип Pink">
+        </a>
+        <button class="nav__button" type="button"></button>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="">Главная</a>
         </li>
-        <li class="menu-list__item">
-          <a href="">Фотографии</a>
+        <li class="nav__item">
+          <a class="nav__link nav__item--active" href="./photo.html">Фотографии</a>
         </li>
-        <li class="menu-list__item menu-list__item--active">
-          <a href="./form.html">Конкурс</a>
+        <li class="nav__item">
+          <a class="nav__link" href="./form.html">Конкурс</a>
         </li>
-        <li class=" menu-list__item">
-          <a href="https://up.htmlacademy.ru/adaptive/19">HTML
+        <li class="nav__item">
+          <a class="nav__link" href="https://up.htmlacademy.ru/adaptive/19">HTML
             Academy</a>
         </li>
       </ul>

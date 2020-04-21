@@ -1,19 +1,67 @@
-html {
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-body {
-  width: @min-width;
+.main__top {
+  background-image: url(../img/back-monile-1-jpg.png);
+  background-color: @bg-black;
+  background-repeat: no-repeat;
+  background-size: auto;
   margin: 0;
-  padding: 0;
-  font-size: @fs-small;
-  line-height: @lh-small;
-  font-style: @font-style;
-  background-color: @bg-white;
-  text-transform: none;
+}
+.main__top-text {
+  font-weight: @fw-normal;
+  text-align: center;
+  color: @txt-white;
+  font-size: 24px;
+  padding-left: 50px;
+  padding-right: 49px;
+  margin-top: 29px;
+  margin-bottom: 33px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.main__app {
+  background-color: @bg-black;
 }
+
+.main__app-button {
+  border-bottom: @border-3white;
+  background-color: @bg-black;
+  width: 281px;
+  height: 55px;
+  border-radius: @radius;
+  margin-left: 19px;
+  margin-right: 20px;
+  margin-top: 28px;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.main__app-link {
+  color: @txt-white;
+  text-align: center;
+  font-size: @fs-main;
+  font-weight: @fw-bold;
+  list-style: @lh-min;
+}
+.main__app-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding-left: 57px;
+  padding-right: 58px;
+  align-items: baseline;
+}
+
+.main__app-text {
+  color: @txt-white;
+  font-size: @fs-small;
+  line-height: @lh-small;
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 46px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 29px;
+  padding-bottom: 35px;
+  padding-top: 32px;
+}
+
