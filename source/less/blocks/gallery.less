@@ -1,6 +1,11 @@
 .gallery__item {
   background-color: @bg-grey;
-  padding: 20px;
+  margin: 20px;
+}
+
+.photo__massage {
+  margin: 0 17px;
+  margin-top: 25px;
 }
 
 .photo__name {
@@ -8,6 +13,8 @@
   line-height: @lh-small;
   font-weight: @fw-bold;
   color: @txt-dark;
+  margin: 0;
+  margin-top: -14px;
 }
 
 .photo__time {
@@ -22,17 +29,38 @@
   font-size: @fs-small;
   line-height: @lh-small;
   color: @txt-dark;
+  margin: 0;
+}
+
+.photo__icon {
+  fill: @fill-red;
+  margin-bottom: 12px;
 }
 
 .photo__likes {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: start;
   color: @txt-red;
+  margin: 0 18px;
 }
 
 .photo__likes-text {
   font-size: @fs-min;
   line-height: @lh-small;
   text-transform: @transform;
-  margin-left: 19px;
+  margin: 19px;
+  margin-top: 8px;
+  margin-bottom: 19px;
+}
+
+.gallery__challenge-text {
+  font-size: @fs-small;
+  line-height: @lh-main;
+  text-align: center;
+  margin-top: 49px;
+  margin-right: 35px;
+  margin-bottom: 48px;
+  margin-left: 32px;
 }

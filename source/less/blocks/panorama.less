@@ -5,14 +5,18 @@
   font-size: @fs-min;
   line-height: @lh-small;
   font-weight: @fw-bold;
+  padding: 5px 20px;
+  position: absolute;
+  left: 161px;
 }
 
 .panorama__massage {
   width: 280px;
   height: 192px;
   background-color: @bg-grey;
-  padding: 0 20px;
-  padding-top: 0;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  margin-top: -8px;
 }
 
 .panorama__name {
@@ -20,6 +24,8 @@
   line-height: @lh-small;
   font-weight: @fw-bold;
   color: @txt-dark;
+  margin: 0 17px;
+  padding-top: 19px;
 }
 
 .panorama__time {
@@ -30,19 +36,31 @@
   text-transform: @transform;
 }
 
-.panorama__image-img {
+.panorama__image {
   background-color: @bg-grey;
+  position: relative;
 }
 
 .panorama__text {
   font-size: @fs-small;
   line-height: @lh-small;
   color: @txt-dark;
+  margin-left: 17px;
+  margin-right: 13px;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.panorama__icon {
+  fill: @fill-red;
 }
 
 .panorama__likes {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin: 0 18px;
 }
 
 .panorama__likes-text {
@@ -50,5 +68,5 @@
   line-height: @lh-small;
   color: @txt-red;
   text-transform: @transform;
-  margin-left: 19px;
+  margin: 0 19px;
 }
