@@ -41,23 +41,23 @@
       </h2>
     </section>
     <form class="main__form form" action="https://echo.htmlacademy.ru" method="get">
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
-        заполните форму ниже:</p>
+      <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту!</p>
       <fieldset class="form__fieldset">
         <ul class="form__list">
           <li class="form__item">
             <label for="surname">Фамилия:</label>
-            <input class="form_input form__input--surname" type="text" id="surname" name="surname"
+            <input class="form__input form__input--surname" type="text" id="surname" name="surname"
               placeholder="Укажите фамилию *" required>
           </li>
           <li class="form__item">
             <label for="name">Имя:</label>
-            <input class="form_input form__input--name" type="text" id="name" name="name"
+            <input class="form__input form__input--name" type="text" id="name" name="name"
               placeholder="Введите ваше имя *" required>
           </li>
           <li class="form__item">
             <label for="secondname">Отчество:</label>
-            <input class="form_input form__input--secondname" type="text" id="secondname" name="secondname"
+            <input class="form__input form__input--secondname" type="text" id="secondname" name="secondname"
               placeholder="Ну и отчество тоже">
           </li>
         </ul>
@@ -66,31 +66,31 @@
         <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form_input form__input--checkbox" type="checkbox" id="shark" name="shark" value="Акула"
+            <input class="form__input form__input--checkbox" type="checkbox" id="shark" name="shark" value="Акула"
               checked>
             <label for="shark">Сделал селфи с акулой</label>
           </li>
           <li class="form__item">
-            <input class="form_input form__input--checkbox" type="checkbox" id="sun" name="sun" value="Солнце" checked>
+            <input class="form__input form__input--checkbox" type="checkbox" id="sun" name="sun" value="Солнце" checked>
             <label for="sun">Обгорел нв солнце </label>
           </li>
           <li class="form__item">
-            <input class="form_input form__input--checkbox" type="checkbox" id="norris" name="norris"
+            <input class="form__input form__input--checkbox" type="checkbox" id="norris" name="norris"
               value="Чак Норрис">
             <label for="norris">Видел Чака Норриса</label>
           </li>
           <li class="form__item">
-            <input class="form_input form__input--checkbox" type="checkbox" id="souvenir" name="souvenir"
+            <input class="form__input form__input--checkbox" type="checkbox" id="souvenir" name="souvenir"
               value="Сувениры">
             <label for="souvenir">Накупил сувениров</label>
           </li>
           <li class="form__item">
-            <input class="form_input form__input--checkbox" type="checkbox" id="tower" name="tower" value="Башня"
+            <input class="form__input form__input--checkbox" type="checkbox" id="tower" name="tower" value="Башня"
               checked>
             <label for="tower">Удержал башню</label>
           </li>
           <li class="form__item">
-            <input class="form_input form__input--checkbox" type="checkbox" id="hotel" name="hotel" value="Отель">
+            <input class="form__input form__input--checkbox" type="checkbox" id="hotel" name="hotel" value="Отель">
             <label for="hotel">Разгромил отель</label>
           </li>
         </ul>
@@ -99,11 +99,12 @@
         <ul class="form__list">
           <li class="form__item">
             <label for="phone">Номер телефона</label>
-            <input class="form__input-phone" type="tel" id="phone" name="phone" value="Номер, пожалуйста">
+            <input class="form__input form__input-phone" type="tel" id="phone" name="phone" value="Номер, пожалуйста">
           </li>
           <li class="form__item">
             <label for="mail">Aдрес почты</label>
-            <input class="form__input-mail" type="email" id="mail" name="mail" value="Введите почту *" required>
+            <input class="form__input form__input-mail" type="email" id="mail" name="mail" value="Введите почту *"
+              required>
           </li>
         </ul>
       </fieldset>
@@ -112,15 +113,15 @@
         </legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input-ios" type="radio" id="ios" name="application" value="iOS" checked>
+            <input class="form__input-radio" type="radio" id="ios" name="application" value="iOS" checked>
             <label for="ios">Pink для iOS</label>
           </li>
           <li class="form__item">
-            <input class="form__input-android" type="radio" id="android" name="application" value="Android">
+            <input class="form__input-radio" type="radio" id="android" name="application" value="Android">
             <label for="android">Pink на Android</label>
           </li>
           <li class="form__item">
-            <input class="form__input-windows" type="radio" id="windows" name="application" value="Windows">
+            <input class="form__input-radio" type="radio" id="windows" name="application" value="Windows">
             <label for="windows">Windows Phone </label>
           </li>
         </ul>
@@ -130,7 +131,7 @@
         <textarea name="comment" id="comment-field" rows="8">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <input class="form__input-form" type="submit" id="forma" name="forma" value="Отправить форму">
-      <p><span class="form__star">*</span>-Обязательные поля</p>
+      <p class="form__comment"><span class="form__star">*</span> &ndash; Обязательные поля</p>
     </form>
   </main>
   <footer class="footer">
