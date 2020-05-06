@@ -1,39 +1,14 @@
-.panorama__image-text {
-  background-color: @bg-red;
-  color: @txt-white;
-  text-transform: @transform;
-  font-size: @fs-min;
-  line-height: @lh-small;
-  font-weight: @fw-bold;
-  padding: 5px 20px;
-  position: absolute;
-  left: 161px;
+.panorama {
+  padding: 0 20px;
+  margin: 0 auto;
 }
-
-.panorama__massage {
-  width: 280px;
-  height: 192px;
-  background-color: @bg-grey;
-  margin: 0 20px;
-  margin-bottom: 20px;
-  margin-top: -8px;
-}
-
-.panorama__name {
+.panorama__headline {
   font-size: @fs-small;
-  line-height: @lh-small;
-  font-weight: @fw-bold;
-  color: @txt-dark;
-  margin: 0 17px;
-  padding-top: 19px;
-}
-
-.panorama__time {
-  font-size: @fs-min;
-  line-height: @lh-small;
+  line-height: @lh-main;
+  text-align: center;
   font-weight: @fw-light;
   color: @txt-dark;
-  text-transform: @transform;
+  margin: 40px 20px;
 }
 
 .panorama__image {
@@ -41,32 +16,62 @@
   position: relative;
 }
 
+.panorama__image-text {
+  background-color: @bg-red;
+  color: @txt-white;
+  text-transform: @txt-upper;
+  font-size: @fs-min;
+  line-height: @lh-small;
+  font-weight: @fw-bold;
+  padding: 5px 20px;
+  position: absolute;
+  right: 222px;
+}
+
+.panorama__massage {
+  background-color: @bg-grey;
+  padding: 15px 17px;
+}
+
+.panorama__name {
+  font-size: @fs-small;
+  line-height: @lh-small;
+  font-weight: @fw-bold;
+  color: @txt-dark;
+  margin: 0 auto;
+}
+
+.panorama__time {
+  font-size: @fs-min;
+  line-height: @lh-small;
+  font-weight: @fw-light;
+  color: @txt-dark;
+  text-transform: @txt-upper;
+  margin: 0 auto;
+}
+
 .panorama__text {
   font-size: @fs-small;
   line-height: @lh-small;
   color: @txt-dark;
-  margin-left: 17px;
-  margin-right: 13px;
-  margin-top: 0;
-  margin-bottom: 7px;
-}
-
-.panorama__icon {
-  fill: @fill-red;
+  margin: 0 auto;
 }
 
 .panorama__likes {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
-  margin: 0 18px;
+  justify-content: flex-start;
+}
+
+.panorama__icon {
+  fill: @fill-red;
+  margin-right: 19px;
 }
 
 .panorama__likes-text {
   font-size: @fs-min;
   line-height: @lh-small;
+  text-transform: @txt-upper;
   color: @txt-red;
-  text-transform: @transform;
-  margin: 0 19px;
 }
