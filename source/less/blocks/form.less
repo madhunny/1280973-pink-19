@@ -1,24 +1,23 @@
+.forma {
+  padding: 20px;
+  margin: 0 auto;
+}
+
 .form__text {
   font-size: @fs-small;
   line-height: @lh-main;
   font-weight: @fw-normal;
   text-align: center;
-  margin-left: 25px;
-  margin-right: 24px;
+  margin: 30px;
 }
 
 .form__fieldset {
-  padding: 0 22px;
   border: none;
+  margin: 0;
 }
 
-.form__legend {
-  font-size: @fs-small;
-  line-height: @lh-min;
-  color: @txt-red;
-  text-transform: @txt-upper;
-  text-align: center;
-  margin: 20px;
+.form__fieldset--grey {
+  background-color: @bg-grey;
 }
 
 .form__list {
@@ -29,8 +28,32 @@
 .form__item {
   font-size: @fs-small;
   font-weight: @fw-normal;
-  line-height: @lh-main;
+  line-height: @lh-big;
   text-transform: @txt-upper;
+  margin-bottom: 10px;
+
+}
+
+.form__legend {
+  font-size: @fs-small;
+  line-height: @lh-min;
+  color: @txt-red;
+  text-transform: @txt-upper;
+  text-align: center;
+  margin: 0;
+}
+
+.form__legend--grey {
+  padding-top: 100px;
+}
+
+.form__label {
+  margin-left: 21px;
+  vertical-align: text-bottom;
+}
+
+.form__label--color {
+  color: @txt-red;
 }
 
 .form__input {
@@ -41,18 +64,27 @@
   font-size: @fs-main;
   font-weight: @fw-normal;
   color: @txt-dark;
-  padding-left: 22px;
+  padding: 0 22px;
 }
 
 .form__input--checkbox {
   width: 35px;
   height: 35px;
   overflow: hidden;
+  margin: 10px;
 }
 
 .form__input-radio {
   width: 37px;
   height: 36px;
+}
+
+.form__textarea {
+  border: @border-grey;
+  font-size: @fs-main;
+  line-height: @lh-main;
+  text-align: left;
+  padding: 19px;
 }
 
 .form__input-form {
@@ -66,7 +98,13 @@
   font-weight: @fw-bold;
   text-transform: @txt-upper;
   text-align: center;
-  margin: 0 22px;
+  margin: 20px;
+}
+
+.form__legend--comment {
+  padding-top: 50px;
+  padding-bottom: 19px;
+  margin: 0;
 }
 
 .form__comment {
