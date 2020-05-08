@@ -1,13 +1,8 @@
-.main {
-  margin: 0 auto;
-  padding: 0;
-}
-
 .main__top {
   background-repeat: no-repeat;
   background-size: auto;
   background-color: @bg-dark;
-  padding: 28px 20px;
+  padding: 20px;
 }
 
 .main__top-headline {
@@ -15,6 +10,7 @@
   text-align: center;
   color: @txt-white;
   font-size: 24px;
+  margin: 20px;
 }
 
 .main__top-button {
@@ -23,7 +19,9 @@
   width: 281px;
   height: 55px;
   border-radius: @radius;
+  text-align: center;
   padding: 0;
+  margin: 0 auto;
 }
 
 .main__top-link {
@@ -36,11 +34,12 @@
 .main__top-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   list-style: none;
   align-items: baseline;
-  padding: 28px 20px;
-  margin: 0;
+  padding: 0;
+  margin: 20px;
 }
 
 .main__top-item {
