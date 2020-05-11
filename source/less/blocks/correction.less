@@ -1,6 +1,10 @@
 .correction {
   background-color: @bg-grey;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.correction__image {
+  line-height: 0;
 }
 
 .correction__list {
@@ -38,6 +42,14 @@
   height: 32px;
 }
 
+.correction__bright {
+  margin: 20px;
+}
+
+.correction__range {
+  width: 100%;
+}
+
 .correction__posting {
   display: flex;
   flex-direction: column;
@@ -46,14 +58,13 @@
 }
 
 .correction__button {
-  width: 280px;
-  height: 55px;
+  width: 100%;
   border-radius: @radius;
   font-size: @fs-main;
   font-weight: @fw-bold;
   text-align: center;
-  padding: 0;
-  margin: 6px auto;
+  padding: 15px;
+  margin: 6px 0;
 }
 
 .correction__button--post {

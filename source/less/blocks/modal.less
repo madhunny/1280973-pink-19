@@ -1,9 +1,7 @@
 .modal {
-  background-color: @bg-white;
+  padding: 20px 0;
   box-shadow: @shadow-form;
   z-index: 1;
-  padding: 20px;
-  margin: 10px auto;
 }
 
 .modal__head {
@@ -19,18 +17,35 @@
   line-height: @lh-small;
   text-align: center;
   color: @txt-dark;
+  margin: 20px 0;
 }
 
-.modal__button {
-  width: 276px;
-  height: 59px;
+.modal__button-error {
+  width: 100%;
   background-color: @btn-green;
   border: @border-green;
   border-radius: @br-min;
   color: @txt-white;
   font-size: @fs-main;
-  line-height: @lh-main;
   text-align: center;
   text-transform: @txt-upper;
-  margin: 43px 0;
+  padding: 15px 20px;
+  margin: 30px 0;
+}
+
+.modal__button-success {
+  width: 100%;
+  background-color: @btn-green;
+  border: @border-green;
+  border-radius: @br-min;
+  color: @txt-white;
+  font-size: @fs-main;
+  text-align: center;
+  text-transform: @txt-upper;
+  padding: 15px 20px;
+  margin: 30px 0;
+}
+
+.modal__wrapper-btn {
+  background-color: @bg-grey;
 }

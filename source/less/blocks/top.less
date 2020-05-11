@@ -1,37 +1,33 @@
-.main__top {
+.top {
+  background-color: @bg-dark;
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: @bg-dark;
-  padding: 20px;
+  color: @txt-white;
+  padding: 20px 0;
 }
 
-.main__top-headline {
+.top__headline {
   font-weight: @fw-light;
   text-align: center;
   color: @txt-white;
   font-size: 24px;
-  margin: 20px;
 }
 
-.main__top-button {
+.top__button {
   border: @border-3white;
   background-color: @bg-dark;
-  width: 281px;
-  height: 55px;
+  width: 100%;
   border-radius: @radius;
   text-align: center;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.main__top-link {
+  padding: 20px;
   color: @txt-white;
   text-align: center;
   font-size: @fs-main;
   font-weight: @fw-bold;
+  display: block;
 }
 
-.main__top-list {
+.top__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,14 +35,14 @@
   list-style: none;
   align-items: baseline;
   padding: 0;
-  margin: 20px;
+  margin: 28px 10px;
 }
 
-.main__top-item {
+.top__item {
   margin: 0 auto;
 }
 
-.main__top-text {
+.top__text {
   color: @txt-white;
   font-size: @fs-small;
   line-height: @lh-small;

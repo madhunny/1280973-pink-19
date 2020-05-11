@@ -8,8 +8,8 @@
 </head>
 
 <body class="page">
-  <div class="wrapper">
-    <header class="header">
+  <header class="header">
+    <div class="wrapper">
       <nav class="nav">
         <div class="nav__menu">
           <a class="nav__logo" href="./index.html">
@@ -34,29 +34,29 @@
           </li>
         </ul>
       </nav>
-    </header>
-  </div>
-
-  <main class="main">
-    <div class="wrapper">
-      <section class="main__top">
-        <h2 class="visually-hidden">Pink life</h2>
-        <h2 class="main__top-headline">Фотографии пользователей</h2>
-      </section>
     </div>
-    <div class="wrapper">
-      <section class="panorama">
+  </header>
+
+  <main>
+    <section class="top">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Pink life</h2>
+        <h2 class="top__headline">Фотографии пользователей</h2>
+      </div>
+    </section>
+
+    <section class="panorama">
+      <div class="wrapper">
         <h2 class="visually-hidden">Panorama</h2>
         <h2 class="panorama__headline">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
           ваших?
         </h2>
-        <div class="panorama__image">
+        <div class="panorama__image-wrap">
           <img src="./img/panorama-mobile-jpg.jpg"
             srcset="./img/panorama-mobile-jpg@2x.jpg 2x, ./img/panorama-mobile-jpg@3x.jpg 3x" width="320" height="137"
             alt="Panorama of the day">
+          <span class="panorama__image-text">Панорама дня</span>
         </div>
-        <span class="panorama__image-text">Панорама дня</span>
-
         <div class="panorama__massage">
           <p class="panorama__name">Анна<span class="panorama__time"> (5 минут назад)</span></p>
           <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
@@ -70,10 +70,11 @@
             <p class="panorama__likes-text">Нравится: <span>215</span></p>
           </div>
         </div>
-    </div>
+      </div>
     </section>
-    <div class="wrapper">
-      <section class="gallery">
+
+    <section class="gallery">
+      <div class="wrapper">
         <h2 class="visually-hidden">Personal Photos</h2>
         <article class="gallery__item photo">
           <h2 class="visually-hidden">Pohoto1</h2>
@@ -199,11 +200,11 @@
           </div>
         </article>
         <p class="gallery__challenge">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+    </section>
 
-      </section>
-    </div>
-    <div class="wrapper">
-      <section class="correction">
+    <section class="correction">
+      <div class="wrapper">
         <h2 class="visually-hidden">Big image</h2>
         <img class="correction__image" src="./img/photo-7-mobile-jpg.jpg"
           srcset="./img/photo-7-mobile-jpg@2x.jpg 2x, ./img/photo-7-mobile-jpg@3x.jpg 3x" width="280" height="374"
@@ -235,11 +236,11 @@
           <button class="correction__button correction__button--post">Запостить</button>
           <button class="correction__button correction__button--cancel">Отмена</button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
-  <div class="wrapper">
-    <footer class="footer">
+  <footer class="footer">
+    <div class="wrapper">
       <a class="footer__logo" href="">
         <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
           <g fill="#283645">
@@ -267,8 +268,8 @@
         <b class="footer__copyright-text">Разработано:</b>
         <a class="footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/19">HTMLAcademy</a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>
