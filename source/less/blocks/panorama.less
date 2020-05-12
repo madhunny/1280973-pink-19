@@ -1,18 +1,22 @@
 .panorama {
   padding: 10px 0;
 }
+
 .panorama__headline {
   font-size: @fs-small;
   line-height: @lh-main;
   text-align: center;
-  font-weight: @fw-light;
+  font-weight: @fw-normal;
   color: @txt-dark;
-  margin: 56px 0;
+  margin: 56px 15px;
 }
 
 .panorama__image-wrap {
   position: relative;
   line-height: 0;
+  margin: 0 auto;
+  width: max-content;
+  padding: 0;
 }
 
 .panorama__image-text {
@@ -22,16 +26,16 @@
   font-size: @fs-min;
   line-height: @lh-small;
   font-weight: @fw-bold;
-  padding: 0 20px;
+  padding: 5px 20px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
 }
 
 .panorama__massage {
   background-color: @bg-grey;
   padding: 15px 17px;
-  margin: 0 20px;
+  margin: 0;
 }
 
 .panorama__name {
