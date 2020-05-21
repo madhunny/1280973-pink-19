@@ -3,12 +3,23 @@
 }
 
 .panorama__headline {
-  font-size: @fs-small;
-  line-height: @lh-main;
+  font-size: @fs-14;
+  line-height: @lh-30;
   text-align: center;
   font-weight: @fw-normal;
   color: @txt-dark;
   margin: 56px 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @fs-18;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
 
 .panorama__image-wrap {
@@ -23,8 +34,8 @@
   background-color: @bg-red;
   color: @txt-white;
   text-transform: @txt-upper;
-  font-size: @fs-min;
-  line-height: @lh-small;
+  font-size: @fs-12;
+  line-height: @lh-24;
   font-weight: @fw-bold;
   padding: 5px 20px;
   position: absolute;
@@ -39,16 +50,16 @@
 }
 
 .panorama__name {
-  font-size: @fs-small;
-  line-height: @lh-small;
+  font-size: @fs-14;
+  line-height: @lh-24;
   font-weight: @fw-bold;
   color: @txt-dark;
   margin: 0 auto;
 }
 
 .panorama__time {
-  font-size: @fs-min;
-  line-height: @lh-small;
+  font-size: @fs-12;
+  line-height: @lh-24;
   font-weight: @fw-light;
   color: @txt-dark;
   text-transform: @txt-upper;
@@ -56,8 +67,8 @@
 }
 
 .panorama__text {
-  font-size: @fs-small;
-  line-height: @lh-small;
+  font-size: @fs-14;
+  line-height: @lh-24;
   color: @txt-dark;
   margin: 0 auto;
 }
@@ -76,8 +87,8 @@
 }
 
 .panorama__likes-text {
-  font-size: @fs-min;
-  line-height: @lh-small;
+  font-size: @fs-12;
+  line-height: @lh-24;
   text-transform: @txt-upper;
   color: @txt-red;
 }

@@ -1,31 +1,102 @@
 .top {
   background-color: @bg-dark;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   color: @txt-white;
   padding: 20px 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    margin: 0 auto;
+  }
 }
 
 .top__headline {
   font-weight: @fw-light;
   text-align: center;
   color: @txt-white;
-  font-size: 24px;
-  line-height: @lh-main;
+  font-size: @fs-24;
+  line-height: @lh-30;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 50%;
+    font-size: @fs-40;
+    line-height: normal;
+    margin-top: 103px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 66%;
+    font-size: @fs-50;
+    line-height: normal;
+    margin-top: 121px;
+    margin-bottom: 61px;
+  }
+}
+
+.top__headline--other {
+  @media (min-width: @tablet-width) {
+    font-size: @fs-50;
+    line-height: normal;
+    padding: 0;
+  }
+}
+
+.top__application {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 286px;
+    // background-image: url(../img/iphone-5-in-hand-png.jpg);
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 50%;
+    margin-bottom: 127px;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 66%;
+  }
 }
 
 .top__button {
   border: @border-3white;
-  background-color: @bg-dark;
+  background-color: none;
   width: 100%;
   border-radius: @radius;
   text-align: center;
   padding: 15px 20px;
   color: @txt-white;
-  font-size: @fs-main;
-  line-height: @lh-min;
+  font-size: @fs-18;
+  line-height: @lh-18;
   font-weight: @fw-bold;
   display: block;
+
+  @media (max-width: @tablet-width) {
+    background-color: @bg-dark;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-21;
+    padding: 19px 15px;
+  }
 }
 
 .top__list {
@@ -37,6 +108,18 @@
   align-items: baseline;
   padding: 0;
   margin: 28px 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 42px;
+    margin-top: 42px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 47px;
+    margin-top: 61px;
+    margin-bottom: 67px;
+  }
 }
 
 .top__item {
@@ -45,7 +128,11 @@
 
 .top__text {
   color: @txt-white;
-  font-size: @fs-small;
-  line-height: @lh-small;
+  font-size: @fs-14;
+  line-height: @lh-24;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: @fs-18;
+  }
 }

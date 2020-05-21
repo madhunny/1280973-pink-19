@@ -1,5 +1,5 @@
 .offer {
-  font-size: @fs-big;
+  font-size: @fs-24;
   font-weight: @fw-light;
   color: @txt-dark;
   text-align: center;
@@ -9,10 +9,31 @@
 
 .offer__text {
   margin: 0 0 20px;
-  font-size: @fs-big;
-  line-height: @lh-main;
+  font-size: @fs-24;
+  line-height: @lh-30;
+
+  @media (min-width: @tablet-width) {
+    font-size: @fs-40;
+    margin: 0;
+    line-height: normal;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-50;
+    line-height: normal;
+  }
 }
 
 .offer__text:last-child {
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
