@@ -2,14 +2,31 @@
   padding: 10px 0;
 }
 
+.gallery__wrapper {
+  @media (min-width: @tablet-width) {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: flex-start;
+  }
+}
+
 .gallery__item {
   background-color: @bg-grey;
 }
 
+
 .gallery__challenge {
-  font-size: @fs-small;
-  line-height: @lh-main;
+  font-size  : @fs-14;
+  line-height: @lh-30;
   font-weight: @fw-normal;
-  text-align: center;
-  margin: 20px 10px;
+  text-align : center;
+  margin     : 20px 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size    : @fs-18;
+    margin       : 0 auto;
+    margin-top   : 74px;
+    margin-bottom: 72px;
+  }
 }

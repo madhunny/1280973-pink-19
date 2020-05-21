@@ -3,27 +3,66 @@
 }
 
 .contacts__question {
-  font-size: @fs-big;
+  font-size  : @fs-24;
   font-weight: @fw-light;
-  line-height: @lh-main;
-  color: @txt-dark;
-  text-align: center;
+  line-height: @lh-30;
+  color      : @txt-dark;
+  text-align : center;
+
+  @media (min-width: @tablet-width) {
+    font-size   : @fs-40;
+    line-height : normal;
+    margin-right: 30px;
+    margin-left : 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @fs-50;
+    margin   : 0 120px;
+  }
 }
 
 .contacts__list {
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding   : 0;
+
+  @media (min-width: @desktop-width) {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: flex-start;
+    margin         : 0 20px;
+  }
+}
+
+.contacts__item {
+  @media (min-width: @desktop-width) {
+    width: 33%;
+  }
+}
+
+.contacts__item:last-child {
+  @media (min-width: @desktop-width) {
+    order: -1;
+  }
 }
 
 .contacts__title {
-  font-size: @fs-main;
-  margin: 0 auto;
-  margin-top: 23px;
+  font-size  : @fs-18;
+  line-height: normal;
+  margin     : 0 auto;
+  margin-top : 23px;
+
+  @media (min-width: @desktop-width) {
+    margin-top   : 70px;
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__link {
-  color: @txt-red;
-  font-size: @fs-big;
+  color      : @txt-red;
+  font-size  : @fs-24;
   font-weight: @fw-light;
+  line-height: normal;
 }
