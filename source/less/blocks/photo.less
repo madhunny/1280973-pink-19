@@ -1,12 +1,28 @@
 .photo {
-  margin: 0;
+  background-color: @bg-grey;
 
-  @media (min-width: @tablet-width) {
-    width: 50%;
+  @media (max-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 33%;
+    width: 32.5%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -19,16 +35,16 @@
 }
 
 .photo__name {
-  font-size: @fs-14;
-  line-height: @lh-24;
+  font-size: @fs-small;
+  line-height: @lh-medium;
   font-weight: @fw-bold;
   color: @txt-dark;
   margin: 25px 0 0;
 }
 
 .photo__time {
-  font-size: @fs-12;
-  line-height: @lh-24;
+  font-size: @fs-xs;
+  line-height: @lh-medium;
   font-weight: @fw-light;
   color: @txt-dark;
   text-transform: @txt-upper;
@@ -36,8 +52,8 @@
 }
 
 .photo__text {
-  font-size: @fs-14;
-  line-height: @lh-24;
+  font-size: @fs-small;
+  line-height: @lh-medium;
   color: @txt-dark;
   margin: 0 auto;
 }
@@ -58,8 +74,8 @@
 }
 
 .photo__likes-text {
-  font-size: @fs-12;
-  line-height: @lh-24;
+  font-size: @fs-xs;
+  line-height: @lh-medium;
   text-transform: @txt-upper;
   color: @txt-red;
   margin: 15px 0 28px;

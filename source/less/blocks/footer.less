@@ -10,10 +10,6 @@
   flex-wrap: wrap;
   margin: 0 auto;
 
-  @media (max-width: @tablet-width) {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     flex-direction: row;
   }
@@ -47,8 +43,8 @@
 }
 
 .footer__copyright-text {
-  font-size: @fs-14;
-  line-height: @lh-18;
+  font-size: @fs-small;
+  line-height: @lh-small;
   text-align: center;
   color: @txt-dark;
   font-weight: @fw-normal;
@@ -56,6 +52,6 @@
 }
 
 .footer__copyright-link {
-  // background-image: url(../img/htmlacademy.svg);
+  background-image: url("../../img/svg/htmlacademy.svg");
   background-repeat: no-repeat;
 }

@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .nav__menu {
@@ -44,19 +49,29 @@
   margin: 0;
 
   @media (min-width: @desktop-width) {
-    display: none;
+    display: flex;
+    margin-left: auto;
   }
 }
 
 .nav__item {
   padding: 20px 0;
   box-shadow: @shadow-menu;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 41px;
+    padding-right: 41px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 .nav__link {
   color: @txt-white;
   font-weight: @fw-bold;
   text-transform: @txt-upper;
-  font-size: @fs-18;
+  font-size: @fs-medium;
   line-height: 32px;
 }

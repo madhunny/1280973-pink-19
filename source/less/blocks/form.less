@@ -3,20 +3,20 @@
 }
 
 .form__text {
-  font-size: @fs-14;
-  line-height: @lh-30;
+  font-size: @fs-small;
+  line-height: @lh-large;
   font-weight: @fw-normal;
   text-align: center;
   margin: 20px 0;
 
   @media (min-width: @tablet-width) {
-    font-size: @fs-18;
+    font-size: @fs-medium;
     margin-left: 30px;
     margin-right: 30px;
   }
 }
 
-.form__text span {
+.form__span {
   @media (max-width: @tablet-width) {
     display: none;
   }
@@ -28,8 +28,8 @@
   margin: 0;
 }
 
-.form__fieldset:nth-child(2),
-.form__fieldset:nth-child(4) {
+.form__fieldset:nth-child(odd),
+.form__fieldset:nth-child(even) {
   background-color: @bg-grey;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .form__legend {
-  font-size: @fs-14;
-  line-height: @lh-18;
+  font-size: @fs-small;
+  line-height: @lh-small;
   font-weight: @fw-normal;
   color: @txt-red;
   text-transform: @txt-upper;
@@ -54,8 +54,8 @@
 }
 
 .form__label-request {
-  font-size: @fs-14;
-  line-height: @lh-30;
+  font-size: @fs-small;
+  line-height: @lh-large;
   font-weight: @fw-normal;
   color: @txt-red;
   text-transform: @txt-upper;
@@ -68,8 +68,8 @@
 }
 
 .form__label-choice {
-  font-size: @fs-18;
-  line-height: @lh-30;
+  font-size: @fs-medium;
+  line-height: @lh-large;
   text-transform: none;
   margin-left: 20px;
 }
@@ -78,8 +78,8 @@
   width: 100%;
   border: @border-grey;
   border-radius: @br-min;
-  font-size: @fs-18;
-  line-height: @lh-30;
+  font-size: @fs-medium;
+  line-height: @lh-large;
   font-weight: @fw-normal;
   color: @txt-dark;
   padding: 15px 20px;
@@ -105,8 +105,8 @@
   width: 100%;
   border: @border-grey;
   font-family: @ff-main;
-  font-size: @fs-18;
-  line-height: @lh-30;
+  font-size: @fs-medium;
+  line-height: @lh-large;
   text-align: left;
   color: @txt-dark;
   padding: 23px 19px;
@@ -118,9 +118,9 @@
   border-radius: @br-min;
   border: @border-green;
   color: @txt-white;
-  font-size: @fs-18;
+  font-size: @fs-medium;
   font-weight: @fw-bold;
-  line-height: @lh-30;
+  line-height: @lh-large;
   text-transform: @txt-upper;
   text-align: center;
   padding: 15px 20px;
@@ -128,8 +128,8 @@
 }
 
 .form__comment {
-  font-size: @fs-14;
-  line-height: @lh-30;
+  font-size: @fs-small;
+  line-height: @lh-large;
   font-weight: @fw-normal;
   text-align: center;
   text-transform: @txt-upper;
